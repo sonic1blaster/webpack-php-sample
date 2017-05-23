@@ -133,13 +133,13 @@ if (isProduction) {
         writeToFileEmit: true
     }));
 } else {
-    config.output.publicPath = 'http://kdvor.lc:5001/public/assets/';
+    config.output.publicPath = 'http://localhost:5001/public/assets/';
     config.devtool = "cheap-module-source-map";
     config.devServer = {
-        publicPath: 'http://kdvor.lc:5001/public/assets/',
+        publicPath: 'http://localhost:5001/public/assets/',
         contentBase: path.resolve(__dirname),
         compress: true,
-        host: "kdvor.lc",
+        host: "localhost",
         port: 5001,
         headers: {
             "Access-Control-Allow-Origin": "*",
@@ -151,7 +151,7 @@ if (isProduction) {
     };
     config.plugins.push(new ManifestPlugin({
         fileName: 'manifest.json',
-        publicPath: 'http://kdvor.lc:5001/public/assets/',
+        publicPath: 'http://localhost:5001/public/assets/',
         // basePath: '/public/tmp/',
         writeToFileEmit: true
     }));
