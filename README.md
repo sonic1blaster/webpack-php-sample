@@ -13,3 +13,4 @@ Sample application based on webpack (dev server) + php
 1. global system env variable NODE_ENV='develop' (you can do it from php config file)
 2. It's possible to compile front-app on production server insensibly for the user. In the main for small projects
 3. Node version 5.10.0 or higher
+4. webpack.php - use your cache lib. in this example cache api from bitrix cms

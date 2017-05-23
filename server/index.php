@@ -2,7 +2,7 @@
 require("./lib/webpack.php");
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,8 +17,8 @@ require("./lib/webpack.php");
     ?>
 
     <div>
-        <script src="<?= webpack::path('vendors.js') ?>" data-skip-moving="true"></script>
-        <script src="<?= webpack::path('application.js') ?>" data-skip-moving="true"></script>
+        <script src="<?= webpack::path('vendors.js') ?>"></script>
+        <script src="<?= webpack::path('application.js') ?>"></script>
     </div>
 </body>
 </html>
